@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImageSource="background_cadastro.png"
+             x:Class="APP_Dailybetes.paginas.cadastro"
+             NavigationPage.HasBackButton="False">
+   
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Margin="44,72,320,0" Background="transparent" Clicked="Btm_voltar_login"/>
+            <Entry x:Name="entry_nome_cadastrar" Placeholder="Email" ClearButtonVisibility="WhileEditing" Keyboard="Email" Margin="50,288,50,0"/>
+            <Entry x:Name="entry_senha_cadastrar" Placeholder="Senha" ClearButtonVisibility="WhileEditing" Keyboard="Email" IsPassword="True" Margin="54,37,50,0"/>
+            <Entry x:Name="entry_senha_confirm" Placeholder="Confirmar senha" ClearButtonVisibility="WhileEditing" Keyboard="Email" IsPassword="True" Margin="54,28,50,0"/>
+            <Button x:Name="botao" Margin="50,20,50,50" CornerRadius="7" Text="CRIAR" FontSize="18" TextColor="White" FontAttributes="Bold" Padding="0" Background="#367DC5" Clicked="btm_cadastrar_usuario"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

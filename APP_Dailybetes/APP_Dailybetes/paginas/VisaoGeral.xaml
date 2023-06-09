@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APP_Dailybetes.paginas.VisaoGeral"
+             NavigationPage.HasBackButton="False"
+             >
+
+    <StackLayout Background="white">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <ImageButton Grid.Row="0" Grid.Column="0" Source="btm_menu" Margin="5,10,153,10" WidthRequest="37" Aspect="AspectFill" BackgroundColor="White"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="Visão Geral" FontSize="20" FontAttributes="Bold" Margin="70,5,0,0" TextColor="#367DC5"/>
+        </Grid>
+        
+        
+        <StackLayout>
+            <Label Text="Níveis de glicose no sangue                                        mg/dl" Padding="25,10,25,0" TextColor="#367DC5" />
+            <Frame BackgroundColor="#DAEFF4" CornerRadius="9" Margin="20,0,20,20" HeightRequest="150">
+                
+            </Frame>
+            <Label Text="Agenda" TextColor="#367DC5"/>
+            <Label Text="Refeições" TextColor="#367DC5"/>
+        </StackLayout>
+
+        
+        <Grid Padding="0,50,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ImageButton Grid.Row="0" Grid.Column="0" Scale="0.6" BackgroundColor="white" Margin="0,20,0,20" Source="icon_home" Clicked="Tb_visaogeral"/>
+            <ImageButton Grid.Row="0" Grid.Column="1" Scale="0.6" BackgroundColor="White" Margin="0,20,0,20" Source="icon_agenda" Clicked="Tb_calendario"/>
+            <ImageButton Grid.Row="0" Grid.Column="2" Scale="0.9" BackgroundColor="White" Margin="0,20,0,20" Source="icon_mais" Clicked="Tb_notas"/>
+            <ImageButton Grid.Row="0" Grid.Column="3" Scale="0.6" BackgroundColor="White" Margin="0,20,0,20" Source="icon_lupa" Clicked="Tb_glicemia"/>
+            <ImageButton Grid.Row="0" Grid.Column="4" Scale="0.7" BackgroundColor="White" Margin="0,20,0,20" Source="icon_conteudo" Clicked="Tb_conteudo"/>
+        </Grid>
+    </StackLayout>
+    
+</ContentPage>

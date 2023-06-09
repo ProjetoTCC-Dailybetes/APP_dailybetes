@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImageSource="background_login.png"
+             x:Class="APP_Dailybetes.paginas.login"
+             NavigationPage.HasBackButton="False">
+    <StackLayout>
+        <Entry x:Name="entry_nome" Placeholder="Email" ClearButtonVisibility="WhileEditing" Keyboard="Email" Margin="50,440,50,0"/>
+        <Entry x:Name="entry_senha" Placeholder="Senha" ClearButtonVisibility="WhileEditing" Keyboard="Email" IsPassword="True" Margin="50,37,50,10"/>
+        <Button x:Name="botao_entrar" CornerRadius="12" Text="ENTRAR" FontSize="18" TextColor="White" FontAttributes="Bold" Margin="47,20,45,30" Background="#367DC5" Clicked="Btm_entrar"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="230"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="Não tem uma conta?" Margin="80,20,10,10"/>
+            <Button Grid.Column="1" Text="Cadastre-se" Background="transparent" FontAttributes="Bold" Padding="0"  Margin="-95,6,10,10" Clicked="btn_tela_cadastro"/>
+
+        </Grid>
+        <Label x:Name="msg_erro" HorizontalTextAlignment="Center" TextColor="Red"/>
+    </StackLayout>
+</ContentPage>
